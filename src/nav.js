@@ -10,11 +10,26 @@ const addLogo = (menu) => {
   menu.appendChild(div);
 };
 
-const addHome = () => {};
+const addHome = (menu) => {
+  const div = document.createElement('div');
+  div.textContent = 'Home';
 
-const addMenu = () => {};
+  menu.appendChild(div);
+};
 
-const addContact = () => {};
+const addMenu = (menu) => {
+  const div = document.createElement('div');
+  div.textContent = 'Menu';
+
+  menu.appendChild(div);
+};
+
+const addContact = (menu) => {
+  const div = document.createElement('div');
+  div.textContent = 'Contact';
+
+  menu.appendChild(div);
+};
 
 const flexContainer = () => {
   const div = document.createElement('div');
@@ -25,6 +40,9 @@ const flexContainer = () => {
 const addNavMenu = (content) => {
   const menu = flexContainer();
   addLogo(menu);
+  addHome(menu);
+  addMenu(menu);
+  addContact(menu);
 
   content.appendChild(menu);
 };
