@@ -1,12 +1,5 @@
 import { addWelcome, messages } from './home.js';
-
-const addLogo = (parent) => {
-  const img = document.createElement('img');
-  img.src = 'restaurant.png';
-  img.alt = 'restaurant logo';
-  img.id = 'logo';
-  parent.appendChild(img);
-};
+import { addLogo } from './nav.js';
 
 const initialPageLoad = () => {
   const content = document.querySelector('#content');
