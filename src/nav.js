@@ -15,7 +15,11 @@ const addMenu = () => {
 }
 
 const addContact = () => {
-  
+
 }
 
-export { addLogo };
+const addNavMenu = (parent) => {
+  addLogo(parent);
+}
+
+export { addNavMenu };

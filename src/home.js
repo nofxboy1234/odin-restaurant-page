@@ -15,4 +15,8 @@ const messages = () => {
   return messages;
 };
 
-export { addWelcome, messages };
+const showHome = (parent) => {
+  addWelcome(parent, messages());
+};
+
+export { showHome };

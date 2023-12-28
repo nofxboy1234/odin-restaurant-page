@@ -1,11 +1,17 @@
-import { addWelcome, messages } from './home.js';
-import { addLogo } from './nav.js';
+import { addNavMenu } from './nav.js';
+import { showHome } from './home.js';
+
+import { showMenu } from './menu.js';
+import { showContact } from './contact.js';
+
 
 const initialPageLoad = () => {
   const content = document.querySelector('#content');
 
-  addLogo(content);
-  addWelcome(content, messages());
+  addNavMenu(content);
+  // showHome(content);
+  // showMenu(content);
+  showContact(content);
 };
 
 export { initialPageLoad };
