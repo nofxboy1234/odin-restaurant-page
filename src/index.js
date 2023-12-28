@@ -1,4 +1,3 @@
-import { hello } from './initial.js';
+import { initialPageLoad } from './initial.js';
 
-hello();
-console.log('index');
+initialPageLoad();

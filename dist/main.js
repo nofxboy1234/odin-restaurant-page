@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("initial"),console.log("index")})();
+(()=>{"use strict";(()=>{const e=document.querySelector("#content");var t;(e=>{const t=document.createElement("img");t.src="restaurant.png",t.alt="restaurant logo",t.id="logo",e.appendChild(t)})(e),t=e,(()=>{const e=[];return e.push("Welcome to RESTAURANT."),e.push("We've been around since the beginning of time."),e.push("We look forward to seeing you soon."),e})().forEach((e=>{const n=document.createElement("div");n.classList.add("welcome"),n.textContent=e,t.appendChild(n)}))})()})();
