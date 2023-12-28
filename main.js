@@ -1,1 +1,1 @@
-console.log("working!");
+(()=>{"use strict";console.log("initial"),console.log("index")})();
