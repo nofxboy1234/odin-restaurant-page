@@ -5,3 +5,13 @@
 .welcome {
   color: rgb(0, 153, 255);
 }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container div {
+  border: 4px solid blue;
+  height: 100px;
+  flex: 1;
+}
