@@ -9,7 +9,7 @@ const initialPageLoad = () => {
   const content = document.querySelector('#content');
 
   addNavMenu(content);
-  showHome(content);
+  // showHome(content);
   // showMenu(content);
   // showContact(content);
 };

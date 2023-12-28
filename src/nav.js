@@ -1,25 +1,32 @@
-const addLogo = (parent) => {
+const addLogo = (menu) => {
   const img = document.createElement('img');
   img.src = 'restaurant.png';
   img.alt = 'restaurant logo';
   img.id = 'logo';
-  parent.appendChild(img);
+
+  const div = document.createElement('div');
+  div.appendChild(img);
+
+  menu.appendChild(div);
 };
 
-const addHome = () => {
+const addHome = () => {};
 
-}
+const addMenu = () => {};
 
-const addMenu = () => {
+const addContact = () => {};
 
-}
+const flexContainer = () => {
+  const div = document.createElement('div');
+  div.classList.add('flex-container');
+  return div;
+};
 
-const addContact = () => {
+const addNavMenu = (content) => {
+  const menu = flexContainer();
+  addLogo(menu);
 
-}
-
-const addNavMenu = (parent) => {
-  addLogo(parent);
-}
+  content.appendChild(menu);
+};
 
 export { addNavMenu };
