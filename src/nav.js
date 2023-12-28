@@ -1,4 +1,4 @@
-const logo = () => {
+const createLogo = () => {
   const img = document.createElement('img');
   img.src = 'restaurant.png';
   img.alt = 'restaurant logo';
@@ -10,53 +10,58 @@ const logo = () => {
 };
 
 const addLogo = (menu) => {
-  menu.appendChild(logo());
+  menu.appendChild(logo);
 };
 
-const home = () => {
+const createHome = () => {
   const div = document.createElement('div');
   div.textContent = 'Home';
   return div;
 };
 
 const addHome = (menu) => {
-  menu.appendChild(home());
+  menu.appendChild(home);
 };
 
-const foodMenu = () => {
+const createFoodMenu = () => {
   const div = document.createElement('div');
   div.textContent = 'Menu';
   return div;
 };
 
 const addFoodMenu = (menu) => {
-  menu.appendChild(foodMenu());
+  menu.appendChild(foodMenu);
 };
 
-const contact = () => {
+const createContact = () => {
   const div = document.createElement('div');
   div.textContent = 'Contact';
   return div;
 };
 
 const addContact = (menu) => {
-  menu.appendChild(contact());
+  menu.appendChild(contact);
 };
 
-const flexContainer = () => {
+const createNavMenu = () => {
   const div = document.createElement('div');
   div.classList.add('flex-container');
   return div;
 };
 
 const addNavMenu = (content) => {
-  const menu = flexContainer();
-  addLogo(menu);
-  addHome(menu);
-  addFoodMenu(menu);
-  addContact(menu);
+  addLogo(navMenu);
+  addHome(navMenu);
+  addFoodMenu(navMenu);
+  addContact(navMenu);
 
-  content.appendChild(menu);
+  content.appendChild(navMenu);
 };
 
-export { addNavMenu };
+const navMenu = createNavMenu();
+const logo = createLogo();
+const home = createHome();
+const foodMenu = createFoodMenu();
+const contact = createContact();
+
+export { addNavMenu, navMenu, home, foodMenu, contact };
