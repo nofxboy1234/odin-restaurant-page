@@ -1,0 +1,19 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "Practicing DOM manipulation by dynamically rendering a restaurant homepage. Using JavaScript alone to generate the entire contents of the website. https://www.theodinproject.com/lessons/javascript-restaurant-page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nofxboy1234/odin-restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nofxboy1234/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/nofxboy1234/odin-restaurant-page#readme"
+}
