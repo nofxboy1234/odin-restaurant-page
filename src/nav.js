@@ -5,7 +5,7 @@ const createLogo = () => {
   img.id = 'logo';
 
   const div = document.createElement('div');
-  div.appendChild(img);
+  // div.appendChild(img);
   return div;
 };
 
@@ -20,7 +20,7 @@ const createHome = () => {
   img.id = 'home';
 
   const div = document.createElement('div');
-  div.appendChild(img);
+  // div.appendChild(img);
   return div;
 };
 
@@ -35,7 +35,7 @@ const createFoodMenu = () => {
   img.id = 'menu';
 
   const div = document.createElement('div');
-  div.appendChild(img);
+  // div.appendChild(img);
   return div;
 };
 
@@ -50,7 +50,7 @@ const createContact = () => {
   img.id = 'contact';
 
   const div = document.createElement('div');
-  div.appendChild(img);
+  // div.appendChild(img);
   return div;
 };
 
