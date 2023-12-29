@@ -14,8 +14,13 @@ const addLogo = (menu) => {
 };
 
 const createHome = () => {
+  const img = document.createElement('img');
+  img.src = 'home.png';
+  img.alt = 'home-image';
+  img.id = 'home';
+
   const div = document.createElement('div');
-  div.textContent = 'Home';
+  div.appendChild(img);
   return div;
 };
 
@@ -24,8 +29,13 @@ const addHome = (menu) => {
 };
 
 const createFoodMenu = () => {
+  const img = document.createElement('img');
+  img.src = 'menu.png';
+  img.alt = 'menu-image';
+  img.id = 'menu';
+
   const div = document.createElement('div');
-  div.textContent = 'Menu';
+  div.appendChild(img);
   return div;
 };
 
@@ -34,8 +44,13 @@ const addFoodMenu = (menu) => {
 };
 
 const createContact = () => {
+  const img = document.createElement('img');
+  img.src = 'contact.png';
+  img.alt = 'contact-image';
+  img.id = 'contact';
+
   const div = document.createElement('div');
-  div.textContent = 'Contact';
+  div.appendChild(img);
   return div;
 };
 
