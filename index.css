@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(103, 255, 255), rgb(4, 32, 194));
+}
+
 #logo {
   height: 30px;
 }
@@ -18,8 +23,9 @@
 
 .flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 50px;
 
   /* width: 400px; */
   /* width: 100%; */
