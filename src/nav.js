@@ -5,7 +5,7 @@ const createLogo = () => {
   img.id = 'logo';
 
   const div = document.createElement('div');
-  // div.appendChild(img);
+  div.appendChild(img);
   return div;
 };
 
@@ -17,10 +17,10 @@ const createHome = () => {
   const img = document.createElement('img');
   img.src = 'home.png';
   img.alt = 'home-image';
-  img.id = 'home';
+  img.classList.add('menu-item');
 
   const div = document.createElement('div');
-  // div.appendChild(img);
+  div.appendChild(img);
   return div;
 };
 
@@ -32,10 +32,10 @@ const createFoodMenu = () => {
   const img = document.createElement('img');
   img.src = 'menu.png';
   img.alt = 'menu-image';
-  img.id = 'menu';
+  img.classList.add('menu-item');
 
   const div = document.createElement('div');
-  // div.appendChild(img);
+  div.appendChild(img);
   return div;
 };
 
@@ -47,10 +47,10 @@ const createContact = () => {
   const img = document.createElement('img');
   img.src = 'contact.png';
   img.alt = 'contact-image';
-  img.id = 'contact';
+  img.classList.add('menu-item');
 
   const div = document.createElement('div');
-  // div.appendChild(img);
+  div.appendChild(img);
   return div;
 };
 
