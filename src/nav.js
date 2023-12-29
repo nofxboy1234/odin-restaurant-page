@@ -64,4 +64,4 @@ const home = createHome();
 const foodMenu = createFoodMenu();
 const contact = createContact();
 
-export { addNavMenu, navMenu, home, foodMenu, contact };
+export { addNavMenu, logo, home, foodMenu, contact };

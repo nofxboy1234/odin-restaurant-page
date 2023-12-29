@@ -1,5 +1,5 @@
 import { initialPageLoad, contentHolder } from './initial.js';
-import { navMenu, home, foodMenu, contact } from './nav.js';
+import { logo, home, foodMenu, contact } from './nav.js';
 
 import { showHome } from './home.js';
 import { showMenu } from './menu.js';
@@ -27,6 +27,7 @@ const callShowContact = () => {
 };
 
 const setupEventListeners = () => {
+  logo.addEventListener('click', callShowHome)
   home.addEventListener('click', callShowHome);
   foodMenu.addEventListener('click', callShowMenu);
   contact.addEventListener('click', callShowContact);
