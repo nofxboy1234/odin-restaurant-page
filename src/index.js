@@ -29,6 +29,8 @@ const callShowHomeSelected = () => {
     return;
   }
 
+  hideAllBackLayers();
+
   homeSelected.classList.toggle('menu-item-back-layer');
   homeSelected.classList.toggle('menu-item-back-layer-offset');
 };
@@ -37,6 +39,8 @@ const callShowMenuSelected = () => {
   if (foodMenuSelected.classList.contains('menu-item-back-layer-offset')) {
     return;
   }
+
+  hideAllBackLayers();
 
   foodMenuSelected.classList.toggle('menu-item-back-layer');
   foodMenuSelected.classList.toggle('menu-item-back-layer-offset');
@@ -47,13 +51,21 @@ const callShowContactSelected = () => {
     return;
   }
 
+  hideAllBackLayers();
+
   contactSelected.classList.toggle('menu-item-back-layer');
   contactSelected.classList.toggle('menu-item-back-layer-offset');
 };
 
-const callHideHomeSelected = () => {
-  homeSelected.classList.toggle('menu-item-back-layer');
-  homeSelected.classList.toggle('menu-item-back-layer-offset');
+const hideAllBackLayers = () => {
+  homeSelected.classList.remove('menu-item-back-layer-offset')
+  homeSelected.classList.add('menu-item-back-layer');
+
+  foodMenuSelected.classList.remove('menu-item-back-layer-offset')
+  foodMenuSelected.classList.add('menu-item-back-layer');
+
+  contactSelected.classList.remove('menu-item-back-layer-offset')
+  contactSelected.classList.add('menu-item-back-layer');
 };
 
 const callShowMenu = () => {
