@@ -58,13 +58,13 @@ const callShowContactSelected = () => {
 };
 
 const hideAllBackLayers = () => {
-  homeSelected.classList.remove('menu-item-back-layer-offset')
+  homeSelected.classList.remove('menu-item-back-layer-offset');
   homeSelected.classList.add('menu-item-back-layer');
 
-  foodMenuSelected.classList.remove('menu-item-back-layer-offset')
+  foodMenuSelected.classList.remove('menu-item-back-layer-offset');
   foodMenuSelected.classList.add('menu-item-back-layer');
 
-  contactSelected.classList.remove('menu-item-back-layer-offset')
+  contactSelected.classList.remove('menu-item-back-layer-offset');
   contactSelected.classList.add('menu-item-back-layer');
 };
 
@@ -94,3 +94,4 @@ const setupEventListeners = () => {
 const content = document.querySelector('#content');
 initialPageLoad(content);
 setupEventListeners();
+callShowHomeSelected();
