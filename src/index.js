@@ -26,7 +26,7 @@ const callShowHome = () => {
 
 const callShowHomeSelected = () => {
   if (homeSelected.classList.contains('menu-item-back-layer-offset')) {
-    return
+    return;
   }
 
   homeSelected.classList.toggle('menu-item-back-layer');
@@ -34,11 +34,19 @@ const callShowHomeSelected = () => {
 };
 
 const callShowMenuSelected = () => {
+  if (foodMenuSelected.classList.contains('menu-item-back-layer-offset')) {
+    return;
+  }
+
   foodMenuSelected.classList.toggle('menu-item-back-layer');
   foodMenuSelected.classList.toggle('menu-item-back-layer-offset');
 };
 
 const callShowContactSelected = () => {
+  if (contactSelected.classList.contains('menu-item-back-layer-offset')) {
+    return;
+  }
+
   contactSelected.classList.toggle('menu-item-back-layer');
   contactSelected.classList.toggle('menu-item-back-layer-offset');
 };
@@ -71,7 +79,6 @@ const setupEventListeners = () => {
 
   contact.addEventListener('click', callShowContact);
   contact.addEventListener('click', callShowContactSelected);
-
 };
 
 const content = document.querySelector('#content');

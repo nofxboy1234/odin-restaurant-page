@@ -51,7 +51,9 @@ const createFoodMenu = () => {
   img.classList.add('menu-item');
 
   const div = document.createElement('div');
+  div.classList.add('menu-item-container');
   div.appendChild(img);
+  div.appendChild(foodMenuSelected);
   return div;
 };
 
@@ -73,7 +75,9 @@ const createContact = () => {
   img.classList.add('menu-item');
 
   const div = document.createElement('div');
+  div.classList.add('menu-item-container');
   div.appendChild(img);
+  div.appendChild(contactSelected);
   return div;
 };
 
