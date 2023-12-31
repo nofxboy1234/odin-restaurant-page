@@ -28,7 +28,7 @@ body {
   height: 25px;
 }
 
-.show-menu-item-back-layer {
+.menu-item-back-layer-offset {
   position: absolute;
   top: -8px;
   left: 12px;
