@@ -18,12 +18,12 @@ const callShowHome = () => {
 
 const callShowHomeSelected = () => {
   homeSelected.classList.toggle('menu-item-back-layer');
-  homeSelected.classList.toggle('show-menu-item-back-layer');
+  homeSelected.classList.toggle('menu-item-back-layer-offset');
 };
 
 const callHideHomeSelected = () => {
   homeSelected.classList.toggle('menu-item-back-layer');
-  homeSelected.classList.toggle('show-menu-item-back-layer');
+  homeSelected.classList.toggle('menu-item-back-layer-offset');
 };
 
 const callShowMenu = () => {
