@@ -37,6 +37,13 @@ const addHome = (menu) => {
   menu.appendChild(home);
 };
 
+const createFoodMenuSelected = () => {
+  const selected_img = document.createElement('img');
+  selected_img.src = 'menu_selected.png';
+  selected_img.classList.add('menu-item-back-layer');
+  return selected_img;
+};
+
 const createFoodMenu = () => {
   const img = document.createElement('img');
   img.src = 'menu.png';
@@ -50,6 +57,13 @@ const createFoodMenu = () => {
 
 const addFoodMenu = (menu) => {
   menu.appendChild(foodMenu);
+};
+
+const createContactSelected = () => {
+  const selected_img = document.createElement('img');
+  selected_img.src = 'menu_selected.png';
+  selected_img.classList.add('menu-item-back-layer');
+  return selected_img;
 };
 
 const createContact = () => {
@@ -86,7 +100,18 @@ const navMenu = createNavMenu();
 const logo = createLogo();
 const homeSelected = createHomeSelected();
 const home = createHome();
+const foodMenuSelected = createFoodMenuSelected();
 const foodMenu = createFoodMenu();
+const contactSelected = createContactSelected();
 const contact = createContact();
 
-export { addNavMenu, logo, home, homeSelected, foodMenu, contact };
+export {
+  addNavMenu,
+  logo,
+  home,
+  foodMenu,
+  contact,
+  homeSelected,
+  foodMenuSelected,
+  contactSelected,
+};

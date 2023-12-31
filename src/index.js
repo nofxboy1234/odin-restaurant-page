@@ -1,5 +1,13 @@
 import { initialPageLoad, contentHolder } from './initial.js';
-import { logo, home, homeSelected, foodMenu, contact } from './nav.js';
+import {
+  logo,
+  home,
+  foodMenu,
+  contact,
+  homeSelected,
+  foodMenuSelected,
+  contactSelected,
+} from './nav.js';
 
 import { showHome } from './home.js';
 import { showMenu } from './menu.js';
@@ -17,8 +25,22 @@ const callShowHome = () => {
 };
 
 const callShowHomeSelected = () => {
+  if (homeSelected.classList.contains('menu-item-back-layer-offset')) {
+    return
+  }
+
   homeSelected.classList.toggle('menu-item-back-layer');
   homeSelected.classList.toggle('menu-item-back-layer-offset');
+};
+
+const callShowMenuSelected = () => {
+  foodMenuSelected.classList.toggle('menu-item-back-layer');
+  foodMenuSelected.classList.toggle('menu-item-back-layer-offset');
+};
+
+const callShowContactSelected = () => {
+  contactSelected.classList.toggle('menu-item-back-layer');
+  contactSelected.classList.toggle('menu-item-back-layer-offset');
 };
 
 const callHideHomeSelected = () => {
@@ -42,10 +64,14 @@ const setupEventListeners = () => {
   home.addEventListener('click', callShowHome);
   // home.addEventListener('mouseover', callShowHomeSelected);
   // home.addEventListener('mouseout', callHideHomeSelected);
-  home.addEventListener('click', callShowHomeSelected)
+  home.addEventListener('click', callShowHomeSelected);
 
   foodMenu.addEventListener('click', callShowMenu);
+  foodMenu.addEventListener('click', callShowMenuSelected);
+
   contact.addEventListener('click', callShowContact);
+  contact.addEventListener('click', callShowContactSelected);
+
 };
 
 const content = document.querySelector('#content');
