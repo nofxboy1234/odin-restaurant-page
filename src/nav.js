@@ -13,6 +13,13 @@ const addLogo = (menu) => {
   menu.appendChild(logo);
 };
 
+const createHomeSelected = () => {
+  const selected_img = document.createElement('img');
+  selected_img.src = 'menu_selected.png';
+  selected_img.classList.add('menu-item-back-layer');
+  return selected_img;
+};
+
 const createHome = () => {
   const img = document.createElement('img');
   img.src = 'home.png';
@@ -20,7 +27,9 @@ const createHome = () => {
   img.classList.add('menu-item');
 
   const div = document.createElement('div');
+  div.classList.add('menu-item-container');
   div.appendChild(img);
+  div.appendChild(homeSelected);
   return div;
 };
 
@@ -75,8 +84,9 @@ const addNavMenu = (content) => {
 
 const navMenu = createNavMenu();
 const logo = createLogo();
+const homeSelected = createHomeSelected();
 const home = createHome();
 const foodMenu = createFoodMenu();
 const contact = createContact();
 
-export { addNavMenu, logo, home, foodMenu, contact };
+export { addNavMenu, logo, home, homeSelected, foodMenu, contact };
