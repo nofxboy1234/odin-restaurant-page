@@ -17,6 +17,13 @@ body {
   position: relative;
 }
 
+.menu-item-container:hover {
+  /* position: relative; */
+  /* opacity: 0; */
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
 .menu-item-back-layer {
   position: absolute;
   top: 0px;
