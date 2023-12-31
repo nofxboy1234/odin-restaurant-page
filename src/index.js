@@ -82,8 +82,6 @@ const setupEventListeners = () => {
   logo.addEventListener('click', callShowHome);
 
   home.addEventListener('click', callShowHome);
-  // home.addEventListener('mouseover', callShowHomeSelected);
-  // home.addEventListener('mouseout', callHideHomeSelected);
   home.addEventListener('click', callShowHomeSelected);
 
   foodMenu.addEventListener('click', callShowMenu);
