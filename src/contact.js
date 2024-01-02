@@ -9,10 +9,12 @@ const showContact = (parent) => {
 
   let div = document.createElement('div');
   div.textContent = 'Mitsuru Kirijo:';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   div = document.createElement('div');
   div.textContent = '999-999-9999';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   innerContainer.appendChild(divParent);
@@ -22,10 +24,12 @@ const showContact = (parent) => {
 
   div = document.createElement('div');
   div.textContent = 'Yukari Takeba:';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   div = document.createElement('div');
   div.textContent = '777-777-7777';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   innerContainer.appendChild(divParent);

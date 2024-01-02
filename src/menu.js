@@ -9,10 +9,12 @@ const showMenu = (parent) => {
 
   let div = document.createElement('div');
   div.textContent = 'Weird Takoyaki:';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   div = document.createElement('div');
   div.textContent = '¥5000';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   innerContainer.appendChild(divParent);
@@ -22,10 +24,12 @@ const showMenu = (parent) => {
 
   div = document.createElement('div');
   div.textContent = 'Mad Bull:';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   div = document.createElement('div');
   div.textContent = '¥600';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   innerContainer.appendChild(divParent);
@@ -35,10 +39,12 @@ const showMenu = (parent) => {
 
   div = document.createElement('div');
   div.textContent = 'Yakisoba Bread:';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   div = document.createElement('div');
   div.textContent = '¥499';
+  div.classList.add('content-item');
   divParent.appendChild(div);
 
   innerContainer.appendChild(divParent);
