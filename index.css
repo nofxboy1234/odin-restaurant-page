@@ -87,3 +87,7 @@ body {
   gap: 50px;
   padding: 10px;
 }
+
+.content-item {
+  width: 150px;
+}
