@@ -79,3 +79,11 @@ body {
 
   height: 100px;
 }
+
+.content-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 10px;
+}

@@ -1,6 +1,6 @@
 const addWelcome = (parent, messages) => {
   const container = document.createElement('div');
-  container.classList.add('flex-container');
+  container.classList.add('content-flex-container');
 
   const innerContainer = document.createElement('div');
 
