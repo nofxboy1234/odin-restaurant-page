@@ -24,6 +24,30 @@ const callShowHome = () => {
   showHome(contentHolder);
 };
 
+const callShowSelected = (event) => {
+  console.log(event);
+  const target = event.target.parentNode;
+  if (target === home) {
+    if (homeSelected.classList.contains('menu-item-back-layer-offset')) {
+      return;
+    }
+    hideAllBackLayers();
+    homeSelected.classList.add('menu-item-back-layer-offset');
+  } else if (target === foodMenu) {
+    if (foodMenuSelected.classList.contains('menu-item-back-layer-offset')) {
+      return;
+    }
+    hideAllBackLayers();
+    foodMenuSelected.classList.add('menu-item-back-layer-offset');
+  } else if (target === contact) {
+    if (contactSelected.classList.contains('menu-item-back-layer-offset')) {
+      return;
+    }
+    hideAllBackLayers();
+    contactSelected.classList.add('menu-item-back-layer-offset');
+  }
+};
+
 const callShowHomeSelected = () => {
   if (homeSelected.classList.contains('menu-item-back-layer-offset')) {
     return;
@@ -31,8 +55,8 @@ const callShowHomeSelected = () => {
 
   hideAllBackLayers();
 
-  homeSelected.classList.toggle('menu-item-back-layer');
-  homeSelected.classList.toggle('menu-item-back-layer-offset');
+  // homeSelected.classList.toggle('menu-item-back-layer');
+  homeSelected.classList.add('menu-item-back-layer-offset');
 };
 
 const callShowMenuSelected = () => {
@@ -82,16 +106,22 @@ const setupEventListeners = () => {
   logo.addEventListener('click', callShowHome);
 
   home.addEventListener('click', callShowHome);
-  home.addEventListener('click', callShowHomeSelected);
+  home.addEventListener('click', callShowSelected);
 
   foodMenu.addEventListener('click', callShowMenu);
-  foodMenu.addEventListener('click', callShowMenuSelected);
+  foodMenu.addEventListener('click', callShowSelected);
 
   contact.addEventListener('click', callShowContact);
-  contact.addEventListener('click', callShowContactSelected);
+  contact.addEventListener('click', callShowSelected);
 };
 
 const content = document.querySelector('#content');
 initialPageLoad(content);
 setupEventListeners();
-callShowHomeSelected();
+
+const initHomeEvent = {
+  target: {
+    parentNode: home,
+  },
+};
+callShowSelected(initHomeEvent);
