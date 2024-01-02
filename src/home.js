@@ -11,6 +11,7 @@ const addWelcome = (parent, messages) => {
   });
 
   container.appendChild(innerContainer);
+  container.classList.add('content');
   parent.appendChild(container);
 };
 

@@ -59,8 +59,14 @@ body {
   filter: invert(100%);
 }
 
-.welcome {
+@font-face {
+  font-family: p3-font;
+  src: url(HussarBold-7mRE.otf);
+}
+
+.content {
   color: black;
+  font-family: p3-font;
 }
 
 .flex-container {

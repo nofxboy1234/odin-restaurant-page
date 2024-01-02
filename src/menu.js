@@ -13,6 +13,7 @@ const showMenu = (parent) => {
   innerContainer.appendChild(food2Div);
 
   container.appendChild(innerContainer);
+  container.classList.add('content');
   parent.appendChild(container);
 };
 
