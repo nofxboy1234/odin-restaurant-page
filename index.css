@@ -16,7 +16,6 @@ body {
 
 .menu-item-container {
   position: relative;
-  cursor: pointer;
 }
 
 .menu-item-back-layer {
@@ -54,6 +53,7 @@ body {
 
 .menu-item {
   height: 25px;
+  cursor: pointer;
 }
 
 .menu-item:hover {
