@@ -27,7 +27,7 @@ const callShowHome = () => {
 const callShowSelected = (event) => {
   const target = event.target.parentNode;
   const cssClass = 'offset-layer';
-  if (target === home) {
+  if (target === logo || target == home) {
     if (homeSelected.classList.contains(cssClass)) {
       return;
     }
@@ -74,6 +74,7 @@ const callShowContact = () => {
 
 const setupEventListeners = () => {
   logo.addEventListener('click', callShowHome);
+  logo.addEventListener('click', callShowSelected);
 
   home.addEventListener('click', callShowHome);
   home.addEventListener('click', callShowSelected);
