@@ -11,10 +11,12 @@ body {
 
 #logo {
   height: 30px;
+  cursor: pointer;
 }
 
 .menu-item-container {
   position: relative;
+  cursor: pointer;
 }
 
 .menu-item-back-layer {
@@ -76,8 +78,4 @@ body {
   gap: 50px;
 
   height: 100px;
-}
-
-.flex-container div {
-  cursor: pointer;
 }
