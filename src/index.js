@@ -25,71 +25,41 @@ const callShowHome = () => {
 };
 
 const callShowSelected = (event) => {
-  console.log(event);
   const target = event.target.parentNode;
+  const cssClass = 'offset-layer';
   if (target === home) {
-    if (homeSelected.classList.contains('menu-item-back-layer-offset')) {
+    if (homeSelected.classList.contains(cssClass)) {
       return;
     }
     hideAllBackLayers();
-    homeSelected.classList.add('menu-item-back-layer-offset');
+    homeSelected.classList.add(cssClass);
   } else if (target === foodMenu) {
-    if (foodMenuSelected.classList.contains('menu-item-back-layer-offset')) {
+    if (foodMenuSelected.classList.contains(cssClass)) {
       return;
     }
     hideAllBackLayers();
-    foodMenuSelected.classList.add('menu-item-back-layer-offset');
+    foodMenuSelected.classList.add(cssClass);
   } else if (target === contact) {
-    if (contactSelected.classList.contains('menu-item-back-layer-offset')) {
+    if (contactSelected.classList.contains(cssClass)) {
       return;
     }
     hideAllBackLayers();
-    contactSelected.classList.add('menu-item-back-layer-offset');
+    contactSelected.classList.add(cssClass);
   }
-};
-
-const callShowHomeSelected = () => {
-  if (homeSelected.classList.contains('menu-item-back-layer-offset')) {
-    return;
-  }
-
-  hideAllBackLayers();
-
-  // homeSelected.classList.toggle('menu-item-back-layer');
-  homeSelected.classList.add('menu-item-back-layer-offset');
-};
-
-const callShowMenuSelected = () => {
-  if (foodMenuSelected.classList.contains('menu-item-back-layer-offset')) {
-    return;
-  }
-
-  hideAllBackLayers();
-
-  foodMenuSelected.classList.toggle('menu-item-back-layer');
-  foodMenuSelected.classList.toggle('menu-item-back-layer-offset');
-};
-
-const callShowContactSelected = () => {
-  if (contactSelected.classList.contains('menu-item-back-layer-offset')) {
-    return;
-  }
-
-  hideAllBackLayers();
-
-  contactSelected.classList.toggle('menu-item-back-layer');
-  contactSelected.classList.toggle('menu-item-back-layer-offset');
 };
 
 const hideAllBackLayers = () => {
-  homeSelected.classList.remove('menu-item-back-layer-offset');
-  homeSelected.classList.add('menu-item-back-layer');
+  const cssOffsetClass = 'offset-layer';
+  const cssNormalClass = 'menu-item-back-layer';
 
-  foodMenuSelected.classList.remove('menu-item-back-layer-offset');
-  foodMenuSelected.classList.add('menu-item-back-layer');
+  homeSelected.classList.remove(cssOffsetClass);
+  // homeSelected.classList.add(cssNormalClass);
 
-  contactSelected.classList.remove('menu-item-back-layer-offset');
-  contactSelected.classList.add('menu-item-back-layer');
+  foodMenuSelected.classList.remove(cssOffsetClass);
+  // foodMenuSelected.classList.add(cssNormalClass);
+
+  contactSelected.classList.remove(cssOffsetClass);
+  // contactSelected.classList.add(cssNormalClass);
 };
 
 const callShowMenu = () => {
