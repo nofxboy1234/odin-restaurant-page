@@ -1,10 +1,17 @@
 const addWelcome = (parent, messages) => {
+  const container = document.createElement('div');
+  container.classList.add('flex-container');
+
+  const innerContainer = document.createElement('div');
+
   messages.forEach((text) => {
-    const div = document.createElement('div');
-    div.classList.add('welcome');
-    div.textContent = text;
-    parent.appendChild(div);
+    const messageDiv = document.createElement('div');
+    messageDiv.textContent = text;
+    innerContainer.appendChild(messageDiv);
   });
+
+  container.appendChild(innerContainer);
+  parent.appendChild(container);
 };
 
 const messages = () => {
