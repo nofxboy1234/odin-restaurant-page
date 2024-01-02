@@ -73,17 +73,17 @@ const callShowContact = () => {
 };
 
 const setupEventListeners = () => {
-  logo.addEventListener('click', callShowHome);
-  logo.addEventListener('click', callShowSelected);
+  logo.firstElementChild.addEventListener('click', callShowHome);
+  logo.firstElementChild.addEventListener('click', callShowSelected);
 
-  home.addEventListener('click', callShowHome);
-  home.addEventListener('click', callShowSelected);
+  home.firstElementChild.addEventListener('click', callShowHome);
+  home.firstElementChild.addEventListener('click', callShowSelected);
 
-  foodMenu.addEventListener('click', callShowMenu);
-  foodMenu.addEventListener('click', callShowSelected);
+  foodMenu.firstElementChild.addEventListener('click', callShowMenu);
+  foodMenu.firstElementChild.addEventListener('click', callShowSelected);
 
-  contact.addEventListener('click', callShowContact);
-  contact.addEventListener('click', callShowSelected);
+  contact.firstElementChild.addEventListener('click', callShowContact);
+  contact.firstElementChild.addEventListener('click', callShowSelected);
 };
 
 const content = document.querySelector('#content');
